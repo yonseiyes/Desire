@@ -24,9 +24,9 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 sudo git clone https://github.com/lazyboozer/Desire.git
 cd $HOME/Desire
-chmod -R 755 autogen.sh
-./autogen.sh
-./configure
+sudo chmod -R 755 autogen.sh
+sudo ./autogen.sh
+sudo ./configure
 sudo chmod 755 share/genbuild.sh
 sudo make
 cd src

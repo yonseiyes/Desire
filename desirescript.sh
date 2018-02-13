@@ -1,5 +1,6 @@
 # Desire
 #!/bin/bash
+cd ..
 if free | awk '/^Swap:/ {exit !$2}'; then
 echo "Have swap"
 else
@@ -20,6 +21,7 @@ sudo apt-get install libzmq3-dev libminiupnpc-dev libssl-dev libevent-dev -y
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+
 sudo git clone https://github.com/lazyboozer/Desire.git
 cd $HOME/Desire
 chmod -R 755 autogen.sh

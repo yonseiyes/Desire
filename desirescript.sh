@@ -31,13 +31,13 @@ sudo chmod 755 share/genbuild.sh
 sudo make
 cd src
 ./desired -daemon
-sleep 3
+sleep 10
 #yellow " Enter externalip"
 #  read -p " > externalip : " externalip
 #echo 
 externalip=$(hostname -i | awk '{print $2}')
 masternodekey=$(./desire-cli masternode genkey)
-./desire-cli stop
+pkill -9 desired
 echo -e "rpcuser=yonseiyes\nrpcpassword=yonseiyes72\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=1\nrpcport=9918\nstaking=0\nexternalip=$externalip:9919\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey" >> $HOME/.desirecore/desire.conf
 echo "Masternode private key: $masternodekey"
 ./desire-cli masternode status

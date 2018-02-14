@@ -32,15 +32,26 @@ sudo make
 cd src
 ./desired -daemon
 sleep 10
-#yellow " Enter externalip"
-#  read -p " > externalip : " externalip
-#echo 
+
 externalip=$(hostname -i | awk '{print $2}')
 masternodekey=$(./desire-cli masternode genkey)
 pkill -9 desired
 echo -e "rpcuser=yonseiyes\nrpcpassword=yonseiyes72\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=1\nrpcport=9918\nstaking=0\nexternalip=$externalip:9919\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey" >> $HOME/.desirecore/desire.conf
 echo "Masternode private key: $masternodekey"
-./desire-cli masternode status
+./desired -daemon
+
+sleep 10
+blockcount1=$(./desire-cli getblockcount)
+echo blockcount1=$blockcount1
+sleep 10
+blockcount2=$(./desire-cli getblockcount)
+echo blockcount2=$blockcount2
+if [ blockcount1 -eq blockcount2]; then
+  goto BB
+fi
+echo nonequal
+:BB
+echo Sentinel Set-up is starting.....
 cd .desirecore;
 wget https://github.com/ZonnCash/sentinel/releases/download/v1.1.0-win64/sentinel-lin64 ;
 chmod +x sentinel-lin64 ;

@@ -4,11 +4,11 @@ Shell script to install a [Desire Masternode] on a Linux server running Ubuntu 1
 
 ***
 ## Installation:  
-apt install git ;
-git clone https://github.com/yonseiyes/desirescript.git ;
+sudo apt install git ;
+sudo git clone https://github.com/yonseiyes/desirescript.git ;
 cd desirescript ;
-chmod +x desirescript.sh ;
-./desirescript.sh ;
+sudo chmod +x desirescript.sh ;
+sudo ./desirescript.sh ;
 
 
 ## Desktop wallet setup  
@@ -22,7 +22,7 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 6. Type the following command: **masternode outputs**  
 7. Open **Masternodes.conf** file  
 8. fill the next items
-* Alias: **MN1** 
+* Alias: **MN01** 
 * Address: **VPS_IP:PORT**  
 * Privkey: **Masternode Private Key**  
 * TxHash: **First value from Step 6**  

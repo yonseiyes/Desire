@@ -23,7 +23,7 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 sudo git clone https://github.com/lazyboozer/Desire.git
-cd $HOME/Desire
+cd ~/Desire
 sudo chmod -R 755 autogen.sh
 sudo ./autogen.sh
 sudo ./configure
@@ -40,17 +40,19 @@ echo -e "rpcuser=yonseiyes\nrpcpassword=yonseiyes72\nrpcallowip=127.0.0.1\nliste
 echo "Masternode private key: $masternodekey"
 ./desired -daemon
 
-sleep 10
-blockcount1=$(./desire-cli getblockcount)
-echo blockcount1=$blockcount1
-sleep 10
-blockcount2=$(./desire-cli getblockcount)
-echo blockcount2=$blockcount2
-if [ blockcount1 -eq blockcount2]; then
-  goto BB
-fi
-echo nonequal
-:BB
+#sleep 10
+#blockcount1=$(./desire-cli getblockcount)
+#echo blockcount1=$blockcount1
+#sleep 10
+#blockcount2=$(./desire-cli getblockcount)
+#echo blockcount2=$blockcount2
+
+#if [ blockcount1 -eq blockcount2]; then
+#  goto BB
+#fi
+#echo nonequal
+#:BB
+
 echo Sentinel Set-up is starting.....
 cd .desirecore;
 wget https://github.com/ZonnCash/sentinel/releases/download/v1.1.0-win64/sentinel-lin64 ;

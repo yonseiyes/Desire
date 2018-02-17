@@ -4,7 +4,7 @@ Shell script to install a [Desire Masternode] on a Linux server running Ubuntu 1
 
 ***
 ## Installation:  
-Copy & Paste below in Commnadline of VPS server & Press 'Enter'
+Copy & Paste below in Command line of VPS server & Press 'Enter'
 
 sudo apt install git ;
 sudo git clone https://github.com/yonseiyes/desirescript.git ;

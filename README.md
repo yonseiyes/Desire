@@ -29,12 +29,15 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 * Privkey: **Masternode Private Key**  
 * TxHash: **First value from Step 6**  
 * Output index:  **Second value from Step 6**  
-9. Save & Exit ㅡ**Masternodes.conf**
-10. Click **Start All**  
 
 For example :
 
 MN01 144.217.161.212:9919 7aT4BojnsqsFNqBkA2296iQBSoeWTKHZ3gXqzZcnJQuXdrqjG1W ff6ec4ed0e3a3504c6028afac755aefb4734755579c07073abd408bb33b0c11b 1
+
+9. Save & Exit ㅡ**Masternodes.conf**
+10. Click **Start All**  
+
+
 ***
 
 ## Multiple MN on one VPS:

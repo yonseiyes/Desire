@@ -41,5 +41,5 @@ MN01 144.217.161.212:9919 7aT4BojnsqsFNqBkA2296iQBSoeWTKHZ3gXqzZcnJQuXdrqjG1W ff
 ***
 Any donation is highly appreciated  
 
-**DSR**: DSW1WhnRYSsy8jqRW7nBZbKLDs9LCUXKif 
-**BTC**: 15Q8Yx2URrtS8SHcJsa1v9ofaSV6Ks5bjx
+**DSR**: DSW1WhnRYSsy8jqRW7nBZbKLDs9LCUXKif   
+**BTC**: 15Q8Yx2URrtS8SHcJsa1v9ofaSV6Ks5bjx 

@@ -22,13 +22,13 @@ sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
-sudo git clone https://github.com/lazyboozer/Desire.git
+git clone https://github.com/lazyboozer/Desire.git
 cd ~/Desire
-sudo chmod -R 755 autogen.sh
-sudo ./autogen.sh
-sudo ./configure
-sudo chmod 755 share/genbuild.sh
-sudo make
+chmod -R 755 autogen.sh
+./autogen.sh
+./configure
+chmod 755 share/genbuild.sh
+make
 cd src
 ./desired -daemon
 sleep 10

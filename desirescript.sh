@@ -59,3 +59,4 @@ wget https://github.com/ZonnCash/sentinel/releases/download/v1.1.0-win64/sentine
 chmod +x sentinel-lin64 ;
 nohup ./sentinel-lin64 & 
 echo "Job completed successfully"
+echo "Masternode private key: $masternodekey"

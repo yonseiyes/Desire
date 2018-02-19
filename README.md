@@ -25,7 +25,7 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 8. fill the next items
 * Alias: **MN01** 
 * Address: **VPS_IP:PORT**  
-* Privkey: **Masternode Private Key**   : ** which is shown in command line of VPS server**
+* Privkey: **Masternode Private Key**   **which is shown in command line of VPS server**
 * TxHash: **First value from Step 6**  
 * Output index:  **Second value from Step 6**  
 

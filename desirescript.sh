@@ -47,12 +47,6 @@ echo "Masternode private key: $masternodekey"
 #blockcount2=$(./desire-cli getblockcount)
 #echo blockcount2=$blockcount2
 
-#if [ blockcount1 -eq blockcount2]; then
-#  goto BB
-#fi
-#echo nonequal
-#:BB
-
 echo Sentinel Set-up is starting.....
 cd .desirecore;
 wget https://github.com/ZonnCash/sentinel/releases/download/v1.1.0-win64/sentinel-lin64 ;

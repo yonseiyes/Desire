@@ -33,7 +33,7 @@ For example :
 
 MN01 144.217.161.212:9919 7aT4BojnsqsFNqBkA2296iQBSoeWTKHZ3gXqzZcnJQuXdrqjG1W ff6ec4ed0e3a3504c6028afac755aefb4734755579c07073abd408bb33b0c11b 0
 
-9. Save & Exit **Masternodes.conf** 
+9. Save & Exit **Masternode.conf** 
 10. Restart Desire Wallet  
 11. Click **Start All** in Masternode tab
 

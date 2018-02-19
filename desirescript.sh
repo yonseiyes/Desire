@@ -36,7 +36,7 @@ sleep 10
 externalip=$(hostname -i | awk '{print $2}')
 masternodekey=$(./desire-cli masternode genkey)
 pkill -9 desired
-echo "rpcuser=yonseiyes\nrpcpassword=yonseiyes72\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=1\nrpcport=9918\nstaking=0\nexternalip=$externalip:9919\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey" >> $HOME/.desirecore/desire.conf
+echo -e "rpcuser=yonseiyes\nrpcpassword=yonseiyes72\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=1\nrpcport=9918\nstaking=0\nexternalip=$externalip:9919\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey" >> $HOME/.desirecore/desire.conf
 echo "Masternode private key: $masternodekey"
 ./desired -daemon
 

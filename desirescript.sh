@@ -33,11 +33,9 @@ cd src
 ./desired -daemon
 sleep 10
 
-  yellow " Enter rpcuser"
-  read -p " > rpcuser : " rpcuser
+  read -p " > Enter rpcuser : " rpcuser
   echo
-  yellow " Enter rpcpassword"
-  read -p " > rpcpassword : " rpcpassword
+  read -p " > Eneter rpcpassword : " rpcpassword
   echo
 
 externalip=$(hostname -i | awk '{print $2}')

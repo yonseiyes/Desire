@@ -53,7 +53,7 @@ echo "Masternode private key: $masternodekey"
 #echo blockcount2=$blockcount2
 
 echo Sentinel Set-up is starting.....
-cd .desirecore;
+cd ~/.desirecore;
 wget https://github.com/ZonnCash/sentinel/releases/download/v1.1.0-win64/sentinel-lin64 ;
 chmod +x sentinel-lin64 ;
 nohup ./sentinel-lin64 & 
